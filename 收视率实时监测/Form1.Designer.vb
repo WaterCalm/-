@@ -29,6 +29,14 @@ Partial Class Form1
         Me.TextBox_CSMLink = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.GroupBox_C1 = New System.Windows.Forms.GroupBox()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label_CSM35 = New System.Windows.Forms.Label()
+        Me.Label_CSM52 = New System.Windows.Forms.Label()
+        Me.Label_CSMALL = New System.Windows.Forms.Label()
+        Me.Label_kuyun_state = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
         Me.CheckBox_C3 = New System.Windows.Forms.CheckBox()
         Me.CheckBox_C2 = New System.Windows.Forms.CheckBox()
         Me.CheckBox_C1 = New System.Windows.Forms.CheckBox()
@@ -62,14 +70,6 @@ Partial Class Form1
         Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.Timer_CreateRow = New System.Windows.Forms.Timer(Me.components)
         Me.Button3 = New System.Windows.Forms.Button()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label_kuyun_state = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.Label_CSMALL = New System.Windows.Forms.Label()
-        Me.Label_CSM52 = New System.Windows.Forms.Label()
-        Me.Label_CSM35 = New System.Windows.Forms.Label()
         Me.GroupBox_C1.SuspendLayout()
         CType(Me.DataGridView_Data, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
@@ -80,34 +80,38 @@ Partial Class Form1
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(21, 80)
+        Me.Label1.Location = New System.Drawing.Point(42, 160)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(59, 12)
+        Me.Label1.Size = New System.Drawing.Size(118, 24)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "酷云EYE："
         '
         'TextBox_KuyunEYELink
         '
-        Me.TextBox_KuyunEYELink.Location = New System.Drawing.Point(86, 77)
+        Me.TextBox_KuyunEYELink.Location = New System.Drawing.Point(172, 154)
+        Me.TextBox_KuyunEYELink.Margin = New System.Windows.Forms.Padding(6)
         Me.TextBox_KuyunEYELink.Name = "TextBox_KuyunEYELink"
-        Me.TextBox_KuyunEYELink.Size = New System.Drawing.Size(486, 21)
+        Me.TextBox_KuyunEYELink.Size = New System.Drawing.Size(968, 35)
         Me.TextBox_KuyunEYELink.TabIndex = 1
         Me.TextBox_KuyunEYELink.Text = "http://eye.kuyun.com/api/sec_ratings"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(15, 107)
+        Me.Label2.Location = New System.Drawing.Point(30, 214)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(65, 12)
+        Me.Label2.Size = New System.Drawing.Size(130, 24)
         Me.Label2.TabIndex = 2
         Me.Label2.Text = "CSM-Huan："
         '
         'TextBox_CSMLink
         '
-        Me.TextBox_CSMLink.Location = New System.Drawing.Point(86, 104)
+        Me.TextBox_CSMLink.Location = New System.Drawing.Point(172, 208)
+        Me.TextBox_CSMLink.Margin = New System.Windows.Forms.Padding(6)
         Me.TextBox_CSMLink.Name = "TextBox_CSMLink"
-        Me.TextBox_CSMLink.Size = New System.Drawing.Size(486, 21)
+        Me.TextBox_CSMLink.Size = New System.Drawing.Size(968, 35)
         Me.TextBox_CSMLink.TabIndex = 3
         Me.TextBox_CSMLink.Text = "http://www.csm-huan.com/history_compare"
         '
@@ -116,9 +120,10 @@ Partial Class Form1
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("微软雅黑", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(7, 19)
+        Me.Label3.Location = New System.Drawing.Point(14, 38)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(117, 28)
+        Me.Label3.Size = New System.Drawing.Size(234, 56)
         Me.Label3.TabIndex = 4
         Me.Label3.Text = "数据来源："
         '
@@ -138,20 +143,111 @@ Partial Class Form1
         Me.GroupBox_C1.Controls.Add(Me.ComboBox3)
         Me.GroupBox_C1.Controls.Add(Me.ComboBox2)
         Me.GroupBox_C1.Controls.Add(Me.ComboBox1)
-        Me.GroupBox_C1.Location = New System.Drawing.Point(23, 214)
+        Me.GroupBox_C1.Location = New System.Drawing.Point(46, 428)
+        Me.GroupBox_C1.Margin = New System.Windows.Forms.Padding(6)
         Me.GroupBox_C1.Name = "GroupBox_C1"
-        Me.GroupBox_C1.Size = New System.Drawing.Size(549, 111)
+        Me.GroupBox_C1.Padding = New System.Windows.Forms.Padding(6)
+        Me.GroupBox_C1.Size = New System.Drawing.Size(1098, 222)
         Me.GroupBox_C1.TabIndex = 7
         Me.GroupBox_C1.TabStop = False
         Me.GroupBox_C1.Text = "频道选择"
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Location = New System.Drawing.Point(626, 174)
+        Me.Label10.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(106, 24)
+        Me.Label10.TabIndex = 12
+        Me.Label10.Text = "CSM 35城"
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Location = New System.Drawing.Point(432, 174)
+        Me.Label9.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(106, 24)
+        Me.Label9.TabIndex = 11
+        Me.Label9.Text = "CSM 52城"
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(214, 174)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(130, 24)
+        Me.Label8.TabIndex = 10
+        Me.Label8.Text = "CSM 全国网"
+        '
+        'Label_CSM35
+        '
+        Me.Label_CSM35.AutoSize = True
+        Me.Label_CSM35.Font = New System.Drawing.Font("宋体", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Label_CSM35.ForeColor = System.Drawing.Color.Green
+        Me.Label_CSM35.Location = New System.Drawing.Point(744, 174)
+        Me.Label_CSM35.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
+        Me.Label_CSM35.Name = "Label_CSM35"
+        Me.Label_CSM35.Size = New System.Drawing.Size(35, 24)
+        Me.Label_CSM35.TabIndex = 9
+        Me.Label_CSM35.Text = "√"
+        '
+        'Label_CSM52
+        '
+        Me.Label_CSM52.AutoSize = True
+        Me.Label_CSM52.Font = New System.Drawing.Font("宋体", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Label_CSM52.ForeColor = System.Drawing.Color.Green
+        Me.Label_CSM52.Location = New System.Drawing.Point(550, 174)
+        Me.Label_CSM52.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
+        Me.Label_CSM52.Name = "Label_CSM52"
+        Me.Label_CSM52.Size = New System.Drawing.Size(35, 24)
+        Me.Label_CSM52.TabIndex = 9
+        Me.Label_CSM52.Text = "√"
+        '
+        'Label_CSMALL
+        '
+        Me.Label_CSMALL.AutoSize = True
+        Me.Label_CSMALL.Font = New System.Drawing.Font("宋体", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Label_CSMALL.ForeColor = System.Drawing.Color.Green
+        Me.Label_CSMALL.Location = New System.Drawing.Point(356, 174)
+        Me.Label_CSMALL.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
+        Me.Label_CSMALL.Name = "Label_CSMALL"
+        Me.Label_CSMALL.Size = New System.Drawing.Size(35, 24)
+        Me.Label_CSMALL.TabIndex = 9
+        Me.Label_CSMALL.Text = "√"
+        '
+        'Label_kuyun_state
+        '
+        Me.Label_kuyun_state.AutoSize = True
+        Me.Label_kuyun_state.Font = New System.Drawing.Font("宋体", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Label_kuyun_state.ForeColor = System.Drawing.Color.Green
+        Me.Label_kuyun_state.Location = New System.Drawing.Point(138, 174)
+        Me.Label_kuyun_state.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
+        Me.Label_kuyun_state.Name = "Label_kuyun_state"
+        Me.Label_kuyun_state.Size = New System.Drawing.Size(35, 24)
+        Me.Label_kuyun_state.TabIndex = 9
+        Me.Label_kuyun_state.Text = "√"
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(32, 174)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(94, 24)
+        Me.Label7.TabIndex = 8
+        Me.Label7.Text = "酷云EYE"
         '
         'CheckBox_C3
         '
         Me.CheckBox_C3.AutoSize = True
         Me.CheckBox_C3.Enabled = False
-        Me.CheckBox_C3.Location = New System.Drawing.Point(417, 25)
+        Me.CheckBox_C3.Location = New System.Drawing.Point(834, 50)
+        Me.CheckBox_C3.Margin = New System.Windows.Forms.Padding(6)
         Me.CheckBox_C3.Name = "CheckBox_C3"
-        Me.CheckBox_C3.Size = New System.Drawing.Size(60, 16)
+        Me.CheckBox_C3.Size = New System.Drawing.Size(114, 28)
         Me.CheckBox_C3.TabIndex = 7
         Me.CheckBox_C3.Text = "频道三"
         Me.CheckBox_C3.UseVisualStyleBackColor = True
@@ -160,9 +256,10 @@ Partial Class Form1
         '
         Me.CheckBox_C2.AutoSize = True
         Me.CheckBox_C2.Enabled = False
-        Me.CheckBox_C2.Location = New System.Drawing.Point(235, 25)
+        Me.CheckBox_C2.Location = New System.Drawing.Point(470, 50)
+        Me.CheckBox_C2.Margin = New System.Windows.Forms.Padding(6)
         Me.CheckBox_C2.Name = "CheckBox_C2"
-        Me.CheckBox_C2.Size = New System.Drawing.Size(60, 16)
+        Me.CheckBox_C2.Size = New System.Drawing.Size(114, 28)
         Me.CheckBox_C2.TabIndex = 6
         Me.CheckBox_C2.Text = "频道二"
         Me.CheckBox_C2.UseVisualStyleBackColor = True
@@ -173,9 +270,10 @@ Partial Class Form1
         Me.CheckBox_C1.Checked = True
         Me.CheckBox_C1.CheckState = System.Windows.Forms.CheckState.Checked
         Me.CheckBox_C1.Enabled = False
-        Me.CheckBox_C1.Location = New System.Drawing.Point(53, 25)
+        Me.CheckBox_C1.Location = New System.Drawing.Point(106, 50)
+        Me.CheckBox_C1.Margin = New System.Windows.Forms.Padding(6)
         Me.CheckBox_C1.Name = "CheckBox_C1"
-        Me.CheckBox_C1.Size = New System.Drawing.Size(60, 16)
+        Me.CheckBox_C1.Size = New System.Drawing.Size(114, 28)
         Me.CheckBox_C1.TabIndex = 5
         Me.CheckBox_C1.Text = "频道一"
         Me.CheckBox_C1.UseVisualStyleBackColor = True
@@ -184,26 +282,29 @@ Partial Class Form1
         '
         Me.ComboBox3.Enabled = False
         Me.ComboBox3.FormattingEnabled = True
-        Me.ComboBox3.Location = New System.Drawing.Point(392, 47)
+        Me.ComboBox3.Location = New System.Drawing.Point(784, 94)
+        Me.ComboBox3.Margin = New System.Windows.Forms.Padding(6)
         Me.ComboBox3.Name = "ComboBox3"
-        Me.ComboBox3.Size = New System.Drawing.Size(121, 20)
+        Me.ComboBox3.Size = New System.Drawing.Size(238, 32)
         Me.ComboBox3.TabIndex = 4
         '
         'ComboBox2
         '
         Me.ComboBox2.Enabled = False
         Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(209, 47)
+        Me.ComboBox2.Location = New System.Drawing.Point(418, 94)
+        Me.ComboBox2.Margin = New System.Windows.Forms.Padding(6)
         Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(121, 20)
+        Me.ComboBox2.Size = New System.Drawing.Size(238, 32)
         Me.ComboBox2.TabIndex = 3
         '
         'ComboBox1
         '
         Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(26, 47)
+        Me.ComboBox1.Location = New System.Drawing.Point(52, 94)
+        Me.ComboBox1.Margin = New System.Windows.Forms.Padding(6)
         Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(121, 20)
+        Me.ComboBox1.Size = New System.Drawing.Size(238, 32)
         Me.ComboBox1.TabIndex = 0
         '
         'DataGridView_Data
@@ -212,11 +313,12 @@ Partial Class Form1
         Me.DataGridView_Data.AllowUserToDeleteRows = False
         Me.DataGridView_Data.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView_Data.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.序号, Me.时间})
-        Me.DataGridView_Data.Location = New System.Drawing.Point(23, 447)
+        Me.DataGridView_Data.Location = New System.Drawing.Point(46, 894)
+        Me.DataGridView_Data.Margin = New System.Windows.Forms.Padding(6)
         Me.DataGridView_Data.Name = "DataGridView_Data"
         Me.DataGridView_Data.ReadOnly = True
         Me.DataGridView_Data.RowTemplate.Height = 23
-        Me.DataGridView_Data.Size = New System.Drawing.Size(549, 150)
+        Me.DataGridView_Data.Size = New System.Drawing.Size(1098, 300)
         Me.DataGridView_Data.TabIndex = 6
         '
         '序号
@@ -235,9 +337,11 @@ Partial Class Form1
         'GroupBox1
         '
         Me.GroupBox1.Controls.Add(Me.Label_Time)
-        Me.GroupBox1.Location = New System.Drawing.Point(23, 341)
+        Me.GroupBox1.Location = New System.Drawing.Point(46, 682)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(6)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(323, 100)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(6)
+        Me.GroupBox1.Size = New System.Drawing.Size(646, 200)
         Me.GroupBox1.TabIndex = 8
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "时间"
@@ -247,17 +351,19 @@ Partial Class Form1
         Me.Label_Time.AutoSize = True
         Me.Label_Time.Font = New System.Drawing.Font("Impact", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label_Time.ForeColor = System.Drawing.Color.Green
-        Me.Label_Time.Location = New System.Drawing.Point(43, 25)
+        Me.Label_Time.Location = New System.Drawing.Point(86, 50)
+        Me.Label_Time.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
         Me.Label_Time.Name = "Label_Time"
-        Me.Label_Time.Size = New System.Drawing.Size(230, 60)
+        Me.Label_Time.Size = New System.Drawing.Size(463, 117)
         Me.Label_Time.TabIndex = 0
         Me.Label_Time.Text = "23 : 59 : 59"
         '
         'Button_Start
         '
-        Me.Button_Start.Location = New System.Drawing.Point(370, 354)
+        Me.Button_Start.Location = New System.Drawing.Point(740, 708)
+        Me.Button_Start.Margin = New System.Windows.Forms.Padding(6)
         Me.Button_Start.Name = "Button_Start"
-        Me.Button_Start.Size = New System.Drawing.Size(75, 36)
+        Me.Button_Start.Size = New System.Drawing.Size(150, 72)
         Me.Button_Start.TabIndex = 9
         Me.Button_Start.Text = "开始检测"
         Me.Button_Start.UseVisualStyleBackColor = True
@@ -265,27 +371,30 @@ Partial Class Form1
         'Button_Stop
         '
         Me.Button_Stop.Enabled = False
-        Me.Button_Stop.Location = New System.Drawing.Point(370, 396)
+        Me.Button_Stop.Location = New System.Drawing.Point(740, 792)
+        Me.Button_Stop.Margin = New System.Windows.Forms.Padding(6)
         Me.Button_Stop.Name = "Button_Stop"
-        Me.Button_Stop.Size = New System.Drawing.Size(75, 36)
+        Me.Button_Stop.Size = New System.Drawing.Size(150, 72)
         Me.Button_Stop.TabIndex = 10
         Me.Button_Stop.Text = "停止监测"
         Me.Button_Stop.UseVisualStyleBackColor = True
         '
         'Button_OpenFile
         '
-        Me.Button_OpenFile.Location = New System.Drawing.Point(451, 354)
+        Me.Button_OpenFile.Location = New System.Drawing.Point(902, 708)
+        Me.Button_OpenFile.Margin = New System.Windows.Forms.Padding(6)
         Me.Button_OpenFile.Name = "Button_OpenFile"
-        Me.Button_OpenFile.Size = New System.Drawing.Size(75, 36)
+        Me.Button_OpenFile.Size = New System.Drawing.Size(150, 72)
         Me.Button_OpenFile.TabIndex = 11
         Me.Button_OpenFile.Text = "打开文件夹"
         Me.Button_OpenFile.UseVisualStyleBackColor = True
         '
         'Button_SaveAs
         '
-        Me.Button_SaveAs.Location = New System.Drawing.Point(451, 396)
+        Me.Button_SaveAs.Location = New System.Drawing.Point(902, 792)
+        Me.Button_SaveAs.Margin = New System.Windows.Forms.Padding(6)
         Me.Button_SaveAs.Name = "Button_SaveAs"
-        Me.Button_SaveAs.Size = New System.Drawing.Size(75, 36)
+        Me.Button_SaveAs.Size = New System.Drawing.Size(150, 72)
         Me.Button_SaveAs.TabIndex = 12
         Me.Button_SaveAs.Text = "文件另存"
         Me.Button_SaveAs.UseVisualStyleBackColor = True
@@ -293,69 +402,77 @@ Partial Class Form1
         'Label_SaveAs
         '
         Me.Label_SaveAs.AutoSize = True
-        Me.Label_SaveAs.Location = New System.Drawing.Point(21, 608)
+        Me.Label_SaveAs.Location = New System.Drawing.Point(42, 1216)
+        Me.Label_SaveAs.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
         Me.Label_SaveAs.Name = "Label_SaveAs"
-        Me.Label_SaveAs.Size = New System.Drawing.Size(29, 12)
+        Me.Label_SaveAs.Size = New System.Drawing.Size(58, 24)
         Me.Label_SaveAs.TabIndex = 13
         Me.Label_SaveAs.Text = "空白"
         '
         'Label_SavePath
         '
         Me.Label_SavePath.AutoSize = True
-        Me.Label_SavePath.Location = New System.Drawing.Point(114, 608)
+        Me.Label_SavePath.Location = New System.Drawing.Point(228, 1216)
+        Me.Label_SavePath.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
         Me.Label_SavePath.Name = "Label_SavePath"
-        Me.Label_SavePath.Size = New System.Drawing.Size(41, 12)
+        Me.Label_SavePath.Size = New System.Drawing.Size(82, 24)
         Me.Label_SavePath.TabIndex = 14
         Me.Label_SavePath.Text = "路径："
         '
         'TextBox_Cookie_quanguo
         '
-        Me.TextBox_Cookie_quanguo.Location = New System.Drawing.Point(86, 131)
+        Me.TextBox_Cookie_quanguo.Location = New System.Drawing.Point(172, 262)
+        Me.TextBox_Cookie_quanguo.Margin = New System.Windows.Forms.Padding(6)
         Me.TextBox_Cookie_quanguo.Name = "TextBox_Cookie_quanguo"
-        Me.TextBox_Cookie_quanguo.Size = New System.Drawing.Size(486, 21)
+        Me.TextBox_Cookie_quanguo.Size = New System.Drawing.Size(968, 35)
         Me.TextBox_Cookie_quanguo.TabIndex = 15
         Me.TextBox_Cookie_quanguo.Text = "flag=hour&queryType=all"
         '
         'TextBox_Cookie_52
         '
-        Me.TextBox_Cookie_52.Location = New System.Drawing.Point(86, 159)
+        Me.TextBox_Cookie_52.Location = New System.Drawing.Point(172, 318)
+        Me.TextBox_Cookie_52.Margin = New System.Windows.Forms.Padding(6)
         Me.TextBox_Cookie_52.Name = "TextBox_Cookie_52"
-        Me.TextBox_Cookie_52.Size = New System.Drawing.Size(486, 21)
+        Me.TextBox_Cookie_52.Size = New System.Drawing.Size(968, 35)
         Me.TextBox_Cookie_52.TabIndex = 16
         Me.TextBox_Cookie_52.Text = "flag=hour&queryType=city52"
         '
         'TextBox_Cookie_35
         '
-        Me.TextBox_Cookie_35.Location = New System.Drawing.Point(86, 187)
+        Me.TextBox_Cookie_35.Location = New System.Drawing.Point(172, 374)
+        Me.TextBox_Cookie_35.Margin = New System.Windows.Forms.Padding(6)
         Me.TextBox_Cookie_35.Name = "TextBox_Cookie_35"
-        Me.TextBox_Cookie_35.Size = New System.Drawing.Size(486, 21)
+        Me.TextBox_Cookie_35.Size = New System.Drawing.Size(968, 35)
         Me.TextBox_Cookie_35.TabIndex = 17
         Me.TextBox_Cookie_35.Text = "flag=hour&queryType=city35"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(27, 134)
+        Me.Label4.Location = New System.Drawing.Point(54, 268)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(53, 12)
+        Me.Label4.Size = New System.Drawing.Size(106, 24)
         Me.Label4.TabIndex = 18
         Me.Label4.Text = "全国网："
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(39, 162)
+        Me.Label5.Location = New System.Drawing.Point(78, 324)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(41, 12)
+        Me.Label5.Size = New System.Drawing.Size(82, 24)
         Me.Label5.TabIndex = 19
         Me.Label5.Text = "52城："
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(39, 190)
+        Me.Label6.Location = New System.Drawing.Point(78, 380)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(41, 12)
+        Me.Label6.Size = New System.Drawing.Size(82, 24)
         Me.Label6.TabIndex = 20
         Me.Label6.Text = "35城："
         '
@@ -365,45 +482,50 @@ Partial Class Form1
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(629, 24)
+        Me.Button1.Location = New System.Drawing.Point(1258, 48)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(6)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.Size = New System.Drawing.Size(150, 46)
         Me.Button1.TabIndex = 21
         Me.Button1.Text = "Button1"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(741, 24)
+        Me.Button2.Location = New System.Drawing.Point(1482, 48)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(6)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
+        Me.Button2.Size = New System.Drawing.Size(150, 46)
         Me.Button2.TabIndex = 22
         Me.Button2.Text = "Button2"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(629, 53)
+        Me.TextBox1.Location = New System.Drawing.Point(1258, 106)
+        Me.TextBox1.Margin = New System.Windows.Forms.Padding(6)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(276, 21)
+        Me.TextBox1.Size = New System.Drawing.Size(548, 35)
         Me.TextBox1.TabIndex = 23
         Me.TextBox1.Text = "http://eye.kuyun.com/api/sec_ratings?tv_id=5"
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(629, 112)
+        Me.TextBox2.Location = New System.Drawing.Point(1258, 224)
+        Me.TextBox2.Margin = New System.Windows.Forms.Padding(6)
         Me.TextBox2.Multiline = True
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(570, 201)
+        Me.TextBox2.Size = New System.Drawing.Size(1136, 398)
         Me.TextBox2.TabIndex = 24
         '
         'PictureBox2
         '
         Me.PictureBox2.Cursor = System.Windows.Forms.Cursors.Hand
         Me.PictureBox2.Image = Global.收视率实时监测.My.Resources.Resources.csmhuanlogo
-        Me.PictureBox2.Location = New System.Drawing.Point(268, 12)
+        Me.PictureBox2.Location = New System.Drawing.Point(536, 24)
+        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(6)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(258, 50)
+        Me.PictureBox2.Size = New System.Drawing.Size(516, 100)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox2.TabIndex = 6
         Me.PictureBox2.TabStop = False
@@ -412,115 +534,39 @@ Partial Class Form1
         '
         Me.PictureBox1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.PictureBox1.Image = Global.收视率实时监测.My.Resources.Resources.酷云logo
-        Me.PictureBox1.Location = New System.Drawing.Point(130, 12)
+        Me.PictureBox1.Location = New System.Drawing.Point(260, 24)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(6)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(132, 50)
+        Me.PictureBox1.Size = New System.Drawing.Size(264, 100)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 5
         Me.PictureBox1.TabStop = False
         '
         'TextBox3
         '
-        Me.TextBox3.Location = New System.Drawing.Point(629, 80)
+        Me.TextBox3.Location = New System.Drawing.Point(1258, 160)
+        Me.TextBox3.Margin = New System.Windows.Forms.Padding(6)
         Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(276, 21)
+        Me.TextBox3.Size = New System.Drawing.Size(548, 35)
         Me.TextBox3.TabIndex = 25
         Me.TextBox3.Text = "channel_codes=cctv1&flag=hour&queryType=all"
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(629, 319)
+        Me.Button3.Location = New System.Drawing.Point(1258, 638)
+        Me.Button3.Margin = New System.Windows.Forms.Padding(6)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(75, 23)
+        Me.Button3.Size = New System.Drawing.Size(150, 46)
         Me.Button3.TabIndex = 26
         Me.Button3.Text = "Button3"
         Me.Button3.UseVisualStyleBackColor = True
         '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(16, 87)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(47, 12)
-        Me.Label7.TabIndex = 8
-        Me.Label7.Text = "酷云EYE"
-        '
-        'Label_kuyun_state
-        '
-        Me.Label_kuyun_state.AutoSize = True
-        Me.Label_kuyun_state.Font = New System.Drawing.Font("宋体", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Label_kuyun_state.ForeColor = System.Drawing.Color.Green
-        Me.Label_kuyun_state.Location = New System.Drawing.Point(69, 87)
-        Me.Label_kuyun_state.Name = "Label_kuyun_state"
-        Me.Label_kuyun_state.Size = New System.Drawing.Size(18, 12)
-        Me.Label_kuyun_state.TabIndex = 9
-        Me.Label_kuyun_state.Text = "√"
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(107, 87)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(65, 12)
-        Me.Label8.TabIndex = 10
-        Me.Label8.Text = "CSM 全国网"
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(216, 87)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(53, 12)
-        Me.Label9.TabIndex = 11
-        Me.Label9.Text = "CSM 52城"
-        '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(313, 87)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(53, 12)
-        Me.Label10.TabIndex = 12
-        Me.Label10.Text = "CSM 35城"
-        '
-        'Label_CSMALL
-        '
-        Me.Label_CSMALL.AutoSize = True
-        Me.Label_CSMALL.Font = New System.Drawing.Font("宋体", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Label_CSMALL.ForeColor = System.Drawing.Color.Green
-        Me.Label_CSMALL.Location = New System.Drawing.Point(178, 87)
-        Me.Label_CSMALL.Name = "Label_CSMALL"
-        Me.Label_CSMALL.Size = New System.Drawing.Size(18, 12)
-        Me.Label_CSMALL.TabIndex = 9
-        Me.Label_CSMALL.Text = "√"
-        '
-        'Label_CSM52
-        '
-        Me.Label_CSM52.AutoSize = True
-        Me.Label_CSM52.Font = New System.Drawing.Font("宋体", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Label_CSM52.ForeColor = System.Drawing.Color.Green
-        Me.Label_CSM52.Location = New System.Drawing.Point(275, 87)
-        Me.Label_CSM52.Name = "Label_CSM52"
-        Me.Label_CSM52.Size = New System.Drawing.Size(18, 12)
-        Me.Label_CSM52.TabIndex = 9
-        Me.Label_CSM52.Text = "√"
-        '
-        'Label_CSM35
-        '
-        Me.Label_CSM35.AutoSize = True
-        Me.Label_CSM35.Font = New System.Drawing.Font("宋体", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Label_CSM35.ForeColor = System.Drawing.Color.Green
-        Me.Label_CSM35.Location = New System.Drawing.Point(372, 87)
-        Me.Label_CSM35.Name = "Label_CSM35"
-        Me.Label_CSM35.Size = New System.Drawing.Size(18, 12)
-        Me.Label_CSM35.TabIndex = 9
-        Me.Label_CSM35.Text = "√"
-        '
         'Form1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1211, 638)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(192.0!, 192.0!)
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi
+        Me.AutoSize = True
+        Me.ClientSize = New System.Drawing.Size(2422, 1276)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.TextBox3)
         Me.Controls.Add(Me.TextBox2)
@@ -550,6 +596,7 @@ Partial Class Form1
         Me.Controls.Add(Me.TextBox_KuyunEYELink)
         Me.Controls.Add(Me.Label1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Margin = New System.Windows.Forms.Padding(6)
         Me.MaximizeBox = False
         Me.Name = "Form1"
         Me.Text = "收视率实时监测"

@@ -75,6 +75,22 @@ Public Class Form1
 
     End Function
 
+    Function ReadJsonFile(Path As String) As String
+        ReadJsonFile = ""
+        If IO.File.Exists(Path) = True Then
+            Dim JsonReader As IO.StreamReader = New IO.StreamReader(Path, System.Text.Encoding.Default)
+            ReadJsonFile = JsonReader.ReadToEnd
+            JsonReader.Close()
+        Else
+            MsgBox("未找到节目ID配置文件"， MsgBoxStyle.OkOnly, "错误")
+            ReadJsonFile = ""
+        End If
+    End Function
+
+    Sub ListChannel()
+
+    End Sub
+
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         TextBox2.Text = GetData(TextBox1.Text, "")
     End Sub
@@ -83,4 +99,7 @@ Public Class Form1
         TextBox2.Text = PostData(TextBox_CSMLink.Text, TextBox3.Text)
     End Sub
 
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        TextBox2.Text = ReadJsonFile(Application.StartupPath & "\ChannelData.json")
+    End Sub
 End Class
