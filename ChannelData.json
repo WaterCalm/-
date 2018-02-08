@@ -1,0 +1,45 @@
+{
+    "version": 20180207,
+    "data": [
+        {
+            "channel": "CCTV-1",
+            "kuyunID": "tv_id=5",
+            "CSMID": "channel_codes=cctv1"
+        },
+        {
+            "channel": "CCTV-2",
+            "kuyunID": "tv_id=6",
+            "CSMID": "channel_codes=cctv2"
+        },
+        {
+            "channel": "CCTV-3",
+            "kuyunID": "tv_id=7",
+            "CSMID": "channel_codes=cctv3"
+        },
+        {
+            "channel": "CCTV-4",
+            "kuyunID": "tv_id=9",
+            "CSMID": "channel_codes=cctv4_asia"
+        },
+        {
+            "channel": "CCTV-5",
+            "kuyunID": "tv_id=223",
+            "CSMID": "channel_codes=cctv5"
+        },
+        {
+            "channel": "CCTV-6",
+            "kuyunID": "tv_id=11",
+            "CSMID": "channel_codes=cctv6"
+        },
+        {
+            "channel": "CCTV-7",
+            "kuyunID": "tv_id=12",
+            "CSMID": "channel_codes=cctv7"
+        },
+        {
+            "channel": "CCTV-8",
+            "kuyunID": "tv_id=13",
+            "CSMID": "channel_codes=cctv8"
+        }
+    ]
+}
