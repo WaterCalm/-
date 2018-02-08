@@ -102,4 +102,8 @@ Public Class Form1
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         TextBox2.Text = ReadJsonFile(Application.StartupPath & "\ChannelData.json")
     End Sub
+
+    Private Sub Button_Start_Click(sender As Object, e As EventArgs) Handles Button_Start.Click
+
+    End Sub
 End Class
